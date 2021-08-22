@@ -61,27 +61,27 @@
 
 // Функции 
 
-function calculateAge(year) {
-    return 2021 - year
-}
-const myAge = calculateAge(1993)
-console.log(myAge)
-console.log(calculateAge(2015))
-console.log(calculateAge(1820))
-console.log(calculateAge(1420))
+// function calculateAge(year) {
+//     return 2021 - year
+// }
+// const myAge = calculateAge(1993)
+// console.log(myAge)
+// console.log(calculateAge(2015))
+// console.log(calculateAge(1820))
+// console.log(calculateAge(1420))
 
-function logInfoAbout(name, year) {
-const age = calculateAge(year)
-if (age > 0) {
-    console.log('lomme ' + name + ' maintenant ' + age)
-} else {
-    console.log('ppc')
-}
+// function logInfoAbout(name, year) {
+// const age = calculateAge(year)
+// if (age > 0) {
+//     console.log('lomme ' + name + ' maintenant ' + age)
+// } else {
+//     console.log('ppc')
+// }
 
-}
-logInfoAbout('Sasha', 1993)
-logInfoAbout('Vasya', 1289)
-logInfoAbout('Aboba', 2400)
+// }
+// logInfoAbout('Sasha', 1993)
+// logInfoAbout('Vasya', 1289)
+// logInfoAbout('Aboba', 2400)
 
 // Массивы 
 // const cars = ['ford', 'mers', 'audi']
@@ -107,21 +107,53 @@ logInfoAbout('Aboba', 2400)
 
 // Объекты 
 
-const person = {
-    firstName: 'Sasha',
-    lastName: "Vasyanov",
-    year: 1992,
-    languages: ['rus', 'fra', 'eng'],
-    hasWife: false,
-    greet: function() {
-        console.log('greet')
-    }
+// const person = {
+//     firstName: 'Sasha',
+//     lastName: "Vasyanov",
+//     year: 1992,
+//     languages: ['rus', 'fra', 'eng'],
+//     hasWife: false,
+//     greet: function() {
+//         console.log('greet')
+//     }
 
+// }
+// console.log(person.languages)
+// person.greet()
+// person.hasWife = true
+// person.isAnimeDebil = false
+// console.log(person)
+// const key = 'languages'
+// console.log(person[key])
+
+// let topvasyans = ['iyla', 'panov', 'vadim', 'maxclo', 'misha', 'vladisla']
+// for (let i = 0; i < topvasyans.length; i++) {
+//     alert(topvasyans[i] + ' - это васян')}
+
+// let user = {
+//     name = 'Vasya',
+//     age: 15,
+//     country = 'France'
+// };
+
+// for (let prop in user) {
+//     console.log(prop + ': ' + user[prop])
+// }
+
+
+// ЦИКЛЫ
+// let i = 1; 
+// let msg = '';
+// while (i < 10) {
+//   msg += i + ' x 3 = ' + (i * 3) + '<br>';  
+//   i++;
+// }
+// document.write(msg);
+
+let x = 4;
+let faf = ' ';
+while (x < 228 + 1) {
+    faf += x + ' x -1.231494 = ' + (x * (-1.231494)) + '<br>';
+    x++;
 }
-console.log(person.languages)
-person.greet()
-person.hasWife = true
-person.isAnimeDebil = false
-console.log(person)
-const key = 'languages'
-console.log(person[key])
+document.write(faf);
