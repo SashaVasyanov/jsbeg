@@ -150,10 +150,135 @@
 // }
 // document.write(msg);
 
-let x = 4;
-let faf = ' ';
-while (x < 228 + 1) {
-    faf += x + ' x -1.231494 = ' + (x * (-1.231494)) + '<br>';
-    x++;
+// let x = 4;
+// let faf = ' ';
+// while (x < 228 + 1) {
+//     faf += x + ' x -1.231494 = ' + (x * (-1.231494)) + '<br>';
+//     x++;
+// }
+// document.write(faf);
+
+// let z = 5;
+// let result = ' ';
+// do {
+//     z += 5;
+//     result += z + ' '
+// } while (z < 30)
+// document.write(result)
+
+// for (var count = 1; count < 3; count++) {
+//     document.write(count + ". Строка цикла<br>");
+//     for (var nestcount = 1; nestcount< 3; nestcount++) {
+//       document.write("Строка вложенного цикла<br>");
+//     }
+//   }
+
+//   for (let p = 2; p < 8; p++) {
+//       document.write(p + ' Первый цикл <br>');
+//       for (let p2 = 1; p2 < 8 + 1; p2++){
+//           document.write(p2 + ' Второй цикл <br>')
+//       }
+//   }
+
+// for (let i = 1; i < 500 + 1; i++) {
+//     if (i == 50 + 1){
+//         break
+//     }
+//     document.write(i)
+//     document.write(' <br>');
+// }
+//f (j == 3) break; // Выход из самого внутреннего цикла
+//         // if (i == 4) break innerloop; // То же самое
+//         if (i == 4) break outerloop; // Выход из внешнего цикла
+//         document.write("i = " + i + " j = " + j + "<br>");
+//       } outerloop:
+//   for(var i = 0; i < 10; i++) {
+//     innerloop:
+//       for(var j = 0; j < 10; j++) {
+//         i
+//     }
+// document.write("FINAL i = " + i + " j = " + j + "<br>");
+// var i;
+//   for(i = 4; i <= 21; i++) {
+//     if (i % 5 !== 1) {
+//       continue;
+//     }
+//     document.write("<br><b>чётное число</b> = " + i);
+//   }
+
+// ФУНКЦИИ 
+//Function Declaration
+// function greet(name)/* в скобках находятся аргументы функции */ {
+//     console.log('Здарова - ', name)
+// } // в фигурных скобках тело функции, которое будет выполняться в момент вызыва функции
+
+// greet('Абоба')
+// FUNCTION EXPRESSION
+// const greet2 = function greet2(name) {
+//     console.log('Привет 2 -', name)
+
+// }
+// greet2('Abobus')
+
+// const abob = function abob() {
+//     var i;
+//   for(i = 2; i <= 12; i++) {
+//     if (i % 2 !== 0) {
+//       continue;
+//     }
+//    document.write("<br><b>чётное число</b> = " + i);
+//   }
+// }
+// abob()
+// abob()
+
+// for (let z = 0; z < 10; z++){
+// abob()
+// }
+
+
+// Анонимные функции
+// let counter = 0 
+// const it = setInterval(function() {
+//     if (counter === 12) {
+//         clearInterval(it)
+//     } else {
+//         console.log(++counter)
+//     }
+// }, 1000)
+
+// 3 СТРЕЛОЧНЫЕ ФУНКЦИИ 
+
+// const strela = (s) => {
+// console.log('Чма - ', s)
+// } 
+// strela('Suzuka')
+// const creatname = UserName => console.log("User name", UserName)
+// creatname('')
+// creatname('xvf')
+
+// const pow2 = num => num ** 2
+// console.log(pow2(1488))
+
+// const PayClient = (name, age, budget) => {
+//     console.log('Имя', name, '\tВозраст', age,'\nБюджет', budget)
+// }
+// PayClient('Саша', 22, 1500 + 'р')
+
+//4 ПАРАМЕТРЫ ПО УМОЛЧАНИЮ
+
+const mult = (a, b = 10) => a * b
+console.log(mult(44, 1232131))
+
+function summAll(...all) {
+    let res = 0
+    for (let num of all) {
+        console.log(res, '+', num)
+        res += num
+        console.log(res)
+    }
+    return res
 }
-document.write(faf);
+const z = summAll(45)
+console.log(z)
+
