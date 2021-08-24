@@ -267,18 +267,19 @@
 
 //4 ПАРАМЕТРЫ ПО УМОЛЧАНИЮ
 
-const mult = (a, b = 10) => a * b
-console.log(mult(44, 1232131))
+// const mult = (a, b = 10) => a * b
+// console.log(mult(44, 1232131))
 
-function summAll(...all) {
-    let res = 0
-    for (let num of all) {
-        console.log(res, '+', num)
-        res += num
-        console.log(res)
-    }
-    return res
-}
-const z = summAll(45)
-console.log(z)
+// function summAll(...all) {
+//     let res = 0
+//     for (let num of all) {
+//         console.log(res, '+', num)
+//         res += num
+//         console.log(res)
+//     }
+//     return res
+// }
+// const z = summAll(45)
+// console.log(z)
+
 
