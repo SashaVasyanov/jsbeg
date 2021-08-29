@@ -53,32 +53,32 @@ const person = {
 // }
 // logger.keys(person)
 
-const logger = {
-  keys() {
-    console.log("Object K ", Object.keys(this));
-  },
-  KeysAndValue() {
-    Object.keys(this).forEach((key) => {
-      console.log(key, this[key]);
-    });
-  },
-  withParams(top = false, between = false, bottom = true) {
-    if (top) {
-      console.log("sssssssssssSssssssss");
-    }
-    Object.keys(this).forEach((key) => {
-      console.log(key, this[key]);
-      if (between) {
-        console.log("========================");
-      }
-      if (bottom) {
-        console.log("PPPPPPPPPPPPPP");
-      }
-    });
-  },
-};
+// const logger = {
+//   keys() {
+//     console.log("Object K ", Object.keys(this));
+//   },
+//   KeysAndValue() {
+//     Object.keys(this).forEach((key) => {
+//       console.log(key, this[key]);
+//     });
+//   },
+//   withParams(top = false, between = false, bottom = true) {
+//     if (top) {
+//       console.log("sssssssssssSssssssss");
+//     }
+//     Object.keys(this).forEach((key) => {
+//       console.log(key, this[key]);
+//       if (between) {
+//         console.log("========================");
+//       }
+//       if (bottom) {
+//         console.log("PPPPPPPPPPPPPP");
+//       }
+//     });
+//   },
+// };
 
-logger.withParams.call(person, true)
+// logger.withParams.call(person, true)
 // const bound = logger.keys.bind(person)
 // bound()
 
@@ -90,3 +90,15 @@ logger.withParams.call(person, true)
 // }
 
 // sayHello("Alex", "NAV"); // Hello, Alex NAV
+
+function spinWords(string) {
+  const words = string.split(" ").map((word) => {
+    if (word.length >= 5) {
+      return word.split("").reverse().join("");
+    }
+    return word
+ }).join(' ')
+
+   console.log(words);
+}
+spinWords("Welcome xyui pizenkas");
